@@ -1,0 +1,135 @@
+.web {
+    padding: 2 5vw;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    /* background-color: red; */
+    border-bottom: 2px solid #6666;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5vw;
+    padding: 2 5vw;
+    color: saddlebrown;
+    height: 4vh;
+
+}
+
+nav h2 {
+    font-size: 2.5vw;
+    font-weight: 10000;
+    color: #666;
+}
+
+.nav-menu>h4 {
+    font-size: 1.5vw;
+    font-weight: 800;
+
+}
+
+.nav-menu button {
+    font-size: 1.2vw;
+    color: saddlebrown;
+
+    height: 6vh;
+    border-radius: 10%;
+    background-color: rgba(139, 69, 19, 0.459);
+    border: 1px solid saddlebrown;
+    font-weight: 900;
+}
+
+nav .fa-bars {
+    display: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0 5vw;
+    margin-top: 0.5%;
+     /* background-color: red; */
+     /* background-color: #86131366; */
+}
+
+ .left {
+    width: 55%;
+    margin-top: 0%;
+   
+
+}
+
+.content .right {
+    width: 45%;
+    margin-top: 5%;
+    
+ 
+}
+.content .right img{
+    width: 100%;
+    height: 70vh;
+    border-radius: 5%;
+    margin-top: 0.9%;
+}
+.left h1,p {
+    padding: 4vh;
+}
+
+.content .left span {
+    color: saddlebrown;
+}
+.content .left button{
+    background-color: aquamarine;
+    border: 0.5px solid saddlebrown;
+    padding: 1.55vw 9vh;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    margin: 2vw;
+}
+
+
+
+@media (max-width: 600px) {
+    nav {
+        /* background-color: lawngreen; */
+        padding: 1 6vw;
+        height: 100px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    nav .fa-bars {
+        display: block;
+        font-weight: 800;
+        color: #666;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: calc(100% - 100px);
+        align-items: center;
+        width: 100%;
+        
+    }
+    .left{
+        /* width: 80%; */
+    }
+    .right{
+        width: 80%;
+    }
+    .right img{
+        width: 100%;
+    }
+    
+}
